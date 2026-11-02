@@ -13,6 +13,7 @@ body {
   font-size: 16px;
   line-height: 1.5; 
   background-color: #0b0d17;
+  background-image: url(../images/spacedust.png);
 
   display: flex;
   flex-direction: column;
@@ -31,7 +32,6 @@ div {background-color: red;}
 	width: 60%; /* sets the width of the content */
 	margin: 0 auto; /* centers the content horizontally */
 	background-color: #CCC; /* this should overwrite the red background color on the DIV */
-  
 }
 
 
@@ -52,6 +52,7 @@ main {
 header {
   background-color: #1c2340;
   color: #e8ecf5;
+  text-align: center;
 }
 
 header, footer {
@@ -75,6 +76,8 @@ section {
   flex: 3 1 400px;
   display: flex;
   flex-flow:row wrap;
+  border-radius: 6px;
+
 }
 
 aside {
@@ -91,10 +94,6 @@ section article {
 }
 h1 {
   font-size: 32px;
-  color:#e8ecf5;
-}
-h1#siteHead {
-  text-align: center;
   color:#e8ecf5;
 }
 
@@ -144,13 +143,6 @@ img {
   padding: .5em;
 }
 
-img#solarModel1 {
-  width: 100%;
-}
-
-img#sunImg1 {
-  width:35%;
-}
 
 
 
@@ -215,6 +207,10 @@ nav a:hover {
   background-color: #644ace;
 }
 
+ul li a.active {
+  background-color: #161d3b;
+}
+
 
 
 /* Footer styles */
@@ -240,6 +236,14 @@ article#main {
   
 }
 
+img#solarModel1 {
+  width: 100%;
+}
+
+img#sunImg1 {
+  width:100%;
+}
+
 
 /* =========================
    Mobile Styles: 0 to 480px 
@@ -260,9 +264,10 @@ article#main {
   }
  
 
-  #siteIntro {order:1;}
-  #solarModel1Parent{order:2;}
-  #main{order:3;}
+  .pageIntro {order:-4;}
+  #sunImg1Parent {order: -3;}
+  #solarModel1Parent{order:-2;}
+  #main{order:-2;}
 }
 
 /* ============================================
