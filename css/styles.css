@@ -12,7 +12,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5; 
-  background-color: #eee;
+  background-color: #1d2a2b4b;
 }
 
 
@@ -27,13 +27,17 @@ div {background-color: red;}
 	width: 60%; /* sets the width of the content */
 	margin: 0 auto; /* centers the content horizontally */
 	background-color: #CCC; /* this should overwrite the red background color on the DIV */
+  
 }
 
 
 
 /* Main styles */
 main {
+  display: flex;
+  flex-flow: row wrap;
 	padding: 10px;
+  /* align-items: flex-start; */
 }
 
 
@@ -44,6 +48,10 @@ header {
   color: #fff;
 }
 
+header, footer {
+  width: 100%;
+}
+
 header h1 {
 	padding: 10px;
 }
@@ -52,13 +60,29 @@ header h1 {
 
 /* Content styles */
 section, aside {
-	background-color: #ddd;
+	background-color: #20303359;
 	margin-bottom: 10px;
 	padding: 10px;
+  flex: 1 1 120px;
 	}
+section {
+  flex: 3 1 400px;
+  display: flex;
+  flex-flow:row wrap;
+}
 
+aside {
+  flex: 1 1 200px;
+}
+
+section article {
+  flex: 1 1 250px;
+}
 h1 {
   font-size: 32px;
+}
+h1#siteHead {
+  text-align: center;
 }
 
 h2 {
@@ -93,15 +117,16 @@ ul li a, ol li a {
 	-- You can modify these image styles if needed
 */
 img {
-  width: 50%; /* Set the width of the image to 50% of its containing element */
+   width: 50%; /*Set the width of the image to 50% of its containing element */
   height: auto; /* Ensure the height adjusts proportionally to maintain the aspect ratio */
-  float: left; /* Allow content to flow around the right side of the image */
+  /* float: left; Allow content to flow around the right side of the image */
   margin-right: 20px; /* Add some space between the image and the surrounding text */
   margin-bottom: 20px; /* Add some space below the image */
+  padding: .5em;
 }
 
 img#solarModel1 {
-  width: 35%;
+  width: 100%;
 }
 
 img#sunImg1 {
@@ -173,4 +198,60 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+  text-align: center;
+   padding: 10px 0px;
+  /* position: fixed;
+  bottom: 0;
+  left:0; */
+}
+
+
+article#main {
+  flex: 3 1 361px;
+}
+#funFact{
+  border: solid;
+  
+}
+
+/* =========================
+   Mobile Styles: 0 to 480px 
+   =========================
+*/
+
+@media only screen and (max-width: 480px) {
+  section, aside {
+    flex: 1 1 100%;
+  }
+  section article {
+    flex: 1 1 100%;
+  }
+
+  nav.horizontal {
+    font-size: .75em;
+    
+  }
+ 
+
+  #siteIntro {order:1;}
+  #solarModel1Parent{order:2;}
+  #main{order:3;}
+}
+
+/* ============================================
+   Tablet and Desktop Styles: 481px and greater 
+   ============================================
+*/
+
+@media only screen and (min-width: 481px) {
+nav.horizontal ul {
+   display:flex;
+   flex-flow: row nowrap;
+}
+
+nav.horizonal li { 
+   flex: 1 1 auto;
+}
+
+
 }

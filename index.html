@@ -5,27 +5,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Space Education Home</title>
+        <link rel="stylesheet" href="css/style_reset.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <header>
-            <h1>Exploring the Solar System</h1>
-            <nav>
+            <h1 id="siteHead">Exploring the Solar System</h1>
+            <nav class="horizontal">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sun.html">The Sun</a></li>
+                    <li><a href="planets.html">Planets</a></li>
+                    <li><a href="moons.html">Moons/Dwarfs</a></li>
+                    <li><a href="exploration.html">Space Exploration</a></li>
+
                 </ul>
             </nav>
         </header>
         <main>
-            <h2>Home</h2>
             <section>
-                <article>
+                <article id="solarModel1Parent">
                     <img id="solarModel1"
                         src="images/home/solar-system-model.jpg"
                         alt="Model of solar system with planetary orbit lines, NASA.">
                 </article>
-                <article>
+                <article id="siteIntro">
                     <h3>Site intro</h3>
                     <p>
                         This site introduces the Solar System to those who may
@@ -35,9 +39,9 @@
                         inner
                         planets, major moons and dwarf planets, as well as
                         documentation on multiple space excursions.
-                    </article>
+                </article>
 
-                    <article>
+                    <article id="main">
                         <h3>Introduction to the Solar System</h3>
                         <p>
                             The Solar System is a huge place filled with
@@ -52,7 +56,7 @@
                         </p>
                     </article>
                 </section>
-                <aside>
+                <aside id="funFact">
                     Fun Fact: The Solar System is hundreds of billions
                     of
                     miles across. If you drove from the Sun to Neptune
@@ -66,7 +70,8 @@
             </main>
             <footer>
                 <p>Blair Ciolk 2026</p>
-                <p>Image Source: <a href="https://science.nasa.gov/resource/solar-system-scales-artists-concept/">NASA</a></p>
+                <p>Image Source: <a
+                        href="https://science.nasa.gov/resource/solar-system-scales-artists-concept/">NASA</a></p>
             </footer>
 
         </body>
