@@ -441,6 +441,7 @@ font-weight: bold;
 }
 
 audio {
+  color-scheme: dark;
   padding: 1em;
   display: block;
   width: 100%;
