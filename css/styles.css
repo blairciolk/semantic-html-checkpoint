@@ -11,7 +11,7 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5; 
+  line-height: 1.5;
   background-color: #0b0d17;
   background-image: url(../images/spacedust.png);
 
@@ -22,16 +22,21 @@ body {
 
 
 /* Don't use DIV's! (unless absolutely necessary)*/
-div {background-color: red;}
+div {
+  background-color: red;
+}
 
 
 /* Container Styles 
 	Note: If you want to limit the width of the web page's content so it doesn't go edge to edge, you can add one div with an id of "container". Nest the container div immediately inside the body tags.
 */
 #container {
-	width: 60%; /* sets the width of the content */
-	margin: 0 auto; /* centers the content horizontally */
-	background-color: #CCC; /* this should overwrite the red background color on the DIV */
+  width: 60%;
+  /* sets the width of the content */
+  margin: 0 auto;
+  /* centers the content horizontally */
+  background-color: #CCC;
+  /* this should overwrite the red background color on the DIV */
 }
 
 
@@ -41,7 +46,7 @@ main {
   flex: 1;
   display: flex;
   flex-flow: row wrap;
-	padding: 10px;
+  padding: 10px;
   align-items: flex-start;
   gap: 1em;
 }
@@ -55,58 +60,60 @@ header {
   text-align: center;
 }
 
-header, footer {
+header,
+footer {
   width: 100%;
 }
 
 header h1 {
-	padding: 10px;
+  padding: 10px;
 }
 
 
 
 /* Content styles */
-section, aside {
-	background-color: #151a30;
-	margin-bottom: 10px;
-	padding: 10px;
+section,
+aside {
+  background-color: #151a30;
+  margin-bottom: 10px;
+  padding: 10px;
   flex: 1 1 120px;
-	}
+}
+
 section {
   flex: 3 1 400px;
   display: flex;
-  flex-flow:row wrap;
+  flex-flow: row wrap;
   border-radius: 6px;
 
 }
 
-aside {
-  flex: 1 1 200px;
-  color:#e8ecf5;
-   border-left: 5px solid #f28c28;
-   border-radius: 4px;
-  padding: 15px;
-  font-style: italic;  
-}
+
 
 section article {
   flex: 1 1 250px;
 }
+
 h1 {
   font-size: 32px;
-  color:#e8ecf5;
+  color: #e8ecf5;
 }
 
 h2 {
   font-size: 1.5em;
-  color:#e8ecf5;
+  color: #e8ecf5;
   text-align: center;
   border-bottom: solid;
 }
 
 h3 {
   font-size: 15px;
-  color:#e8ecf5;
+  color: #e8ecf5;
+}
+
+h4 {
+  font-size: 15px;
+  color: #e8ecf5;
 }
 
 p {
@@ -119,29 +126,40 @@ p {
 }
 
 
-ul, ol {
-  padding-left: 20px; /* Add padding to the left of lists */
-  margin: 10px 0; /* Add top and bottom margin to lists */
+ul,
+ol {
+  padding-left: 20px;
+  /* Add padding to the left of lists */
+  margin: 10px 0;
+  /* Add top and bottom margin to lists */
   text-decoration: none;
 }
 
-ul li, ol li {
-  margin-bottom: 5px; /* Add bottom margin to list items */
+ul li,
+ol li {
+  margin-bottom: 5px;
+  /* Add bottom margin to list items */
 }
 
-ul li a, ol li a {
-	text-decoration: none;
-	}
+ul li a,
+ol li a {
+  text-decoration: none;
+}
 
 
 /* image styles 
 	-- You can modify these image styles if needed
 */
 img {
-   width: 50%; /*Set the width of the image to 50% of its containing element */
-  height: auto; /* Ensure the height adjusts proportionally to maintain the aspect ratio */
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  /*Set the width of the image to 50% of its containing element */
+  height: auto;
+  /* Ensure the height adjusts proportionally to maintain the aspect ratio */
   /* float: left; Allow content to flow around the right side of the image */
-  margin-right: 20px; /* Add some space between the image and the surrounding text */
+  margin:0;
+  /* Add some space between the image and the surrounding text */
   /* margin-bottom: 20px; Add some space below the image */
   padding: .5em;
 }
@@ -151,28 +169,38 @@ img {
 
 /* Table Styles */
 table {
-  width: 90%; /* Make the table span the full width of its container */
-  border-collapse: collapse; /* Collapse borders between table cells */
-  margin: 20px auto auto; /* Add some spacing above the table */
+  width: 90%;
+  /* Make the table span the full width of its container */
+  border-collapse: collapse;
+  /* Collapse borders between table cells */
+  margin: 20px auto auto;
+  /* Add some spacing above the table */
 }
 
-th, td {
-  text-align: left; /* Align text to the left in table headers and cells */
-  padding: 8px; /* Add padding inside table cells */
-  border: 1px solid #ddd; /* Add a solid border around each cell */
+th,
+td {
+  text-align: left;
+  /* Align text to the left in table headers and cells */
+  padding: 8px;
+  /* Add padding inside table cells */
+  border: 1px solid #ddd;
+  /* Add a solid border around each cell */
 }
 
 th {
-  background-color: #f2f2f2; /* Light grey background for table headers */
-  color: #333; /* Darker text color for headers */
+  background-color: #f2f2f2;
+  /* Light grey background for table headers */
+  color: #333;
+  /* Darker text color for headers */
 }
 
 td {
-	background-color: #D2D2D2;
-	}
+  background-color: #D2D2D2;
+}
 
-tr:hover td{
-  background-color: #f5f5f5; /* Add a hover effect for table rows */
+tr:hover td {
+  background-color: #f5f5f5;
+  /* Add a hover effect for table rows */
 }
 
 
@@ -181,7 +209,7 @@ tr:hover td{
 /* Navigation styles */
 nav {
   background-color: #1a2246;
-  padding:0;
+  padding: 0;
 }
 
 nav ul {
@@ -214,7 +242,9 @@ ul li a.active {
   background-color: #161d3b;
 }
 
-
+a {
+  color: #4c379e;
+}
 
 /* Footer styles */
 footer {
@@ -222,11 +252,12 @@ footer {
   color: #fff;
   text-align: center;
   text-align: center;
-   padding: 5px 0px;
+  padding: 5px 0px;
   /* position: fixed;
   bottom: 0;
   left:0; */
 }
+
 article {
   padding: .5em;
 }
@@ -234,9 +265,8 @@ article {
 article#main {
   flex: 3 1 361px;
 }
-#funFactParent{
-  border: solid; 
-}
+
+
 
 #funFact {
   font-size: 1.25em;
@@ -248,7 +278,7 @@ img#solarModel1 {
 }
 
 img#sunImg1 {
-  width:100%;
+  width: 100%;
 }
 
 .imageSource {
@@ -265,27 +295,52 @@ img#sunImg1 {
 */
 
 @media only screen and (max-width: 480px) {
-  section, aside {
+
+  section,
+  aside {
     flex: 1 1 100%;
   }
+
   section article {
     flex: 1 1 100%;
   }
 
   nav.horizontal {
     font-size: .75em;
-    
+
   }
- 
+
   #funFactParent {
     display: none;
   }
 
 
-  .pageIntro {order:-5;}
-  #sunImg1Parent {order: -4;}
-  #solarModel1Parent{order:-3;}
-  #main{order:-2;}
+  .pageIntro {
+    order: -5;
+  }
+
+  #sunImg1Parent {
+    order: -4;
+  }
+
+  #solarModel1Parent {
+    order: -3;
+  }
+
+  #main {
+    order: -2;
+  }
+
+  #planetIntro {
+    order: 4;
+  }
+  #systemInfo {
+    order: 2;
+  }
+  #planetsAddInf {
+    order: 2;
+  }
+
 }
 
 /* ============================================
@@ -294,14 +349,106 @@ img#sunImg1 {
 */
 
 @media only screen and (min-width: 481px) {
-nav.horizontal ul {
-   display:flex;
-   flex-flow: row nowrap;
+  nav.horizontal ul {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  nav.horizontal li {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  #planetImgParent {
+    flex: 2 1 500px;
+  }
+
 }
 
-nav.horizontal li { 
-   flex: 1 1 auto;
+
+/* cards home page */
+
+#overview {
+  justify-content: center;
 }
 
+#overview h3 {
+  text-align: center;
+  font-size: 1.2em;
+  color: #7c5cff;
+}
+
+#planetImgParent {
+  width: 150%;
+  margin-right: 0;
+}
+
+
+#funFactParent {
+  flex: 1 1 200px;
+  color: #e8ecf5;
+  /* border-left: 5px solid #f28c28; */
+  border: solid black;
+  border-radius: 4px;
+  padding: 15px;
+  font-style: italic;
+}
+
+#funFactContent {
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #e8ecf5;
+  padding: .4em;
+  text-indent: 0%;
+  text-align: center;
+}
+
+
+#sunAddInf {
+  flex: 1 1 200px;
+  color: #e8ecf5;
+  border-left: 5px solid #f28c28;
+  border-radius: 4px;
+  padding: 15px;
+  font-style: italic;
+}
+
+#planetsAddInf {
+  flex: 1 1 200px;
+  color: #e8ecf5;
+  border-left: 5px solid #18408b;
+  border-radius: 4px;
+  padding: 15px;
+  font-style: italic;
+}
+
+#planetInfoParent h3{
+font-size: 1.1em;
+font-weight: bold;
+}
+
+#innerPlanets {
+  flex: 1 1 100%;
+}
+
+#outerPlanets{ 
+  flex: 1 1 100%;
+}
+
+#sunPageIntro
+{
+  text-align:center;
+}
+
+audio {
+  padding: 1em;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 10px;             
+  border: 2px solid #f28c28;      
+  border-radius: 8px;
+  padding: 2px;
+  margin: 10px 0;
 
 }
