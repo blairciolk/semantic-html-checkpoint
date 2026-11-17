@@ -453,3 +453,11 @@ audio {
   margin: 10px 0;
 
 }
+
+audio > source {
+  color-scheme: dark;
+}
+
+source {
+  color-scheme: dark;
+}
